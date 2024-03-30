@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34723.18
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "gigadr3w.benchmark.dataaccess", "gigadr3w.benchmark.dataaccess\gigadr3w.benchmark.dataaccess.csproj", "{6C0A966A-69B2-4CCB-B5D7-80A26A401DBC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "gigadr3w.benchmark.container-mssql", "gigadr3w.benchmark.container-mssql", "{2311FA37-9DE2-4C11-8D8E-D9CA4B21A1E9}"
+	ProjectSection(SolutionItems) = preProject
+		..\gigadr3w.mssql\docker-compose.yml = ..\gigadr3w.mssql\docker-compose.yml
+		..\gigadr3w.mssql\Dockerfile = ..\gigadr3w.mssql\Dockerfile
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "init", "init", "{B41854DE-070A-4215-BA98-456376AD4226}"
+	ProjectSection(SolutionItems) = preProject
+		..\gigadr3w.mssql\init\create_database.sql = ..\gigadr3w.mssql\init\create_database.sql
+		..\gigadr3w.mssql\init\entrypoint.sh = ..\gigadr3w.mssql\init\entrypoint.sh
+		..\gigadr3w.mssql\init\MyLovelyAdventureWorks.bak = ..\gigadr3w.mssql\init\MyLovelyAdventureWorks.bak
+		..\gigadr3w.mssql\init\populate_database.sql = ..\gigadr3w.mssql\init\populate_database.sql
+		..\gigadr3w.mssql\init\setup.sh = ..\gigadr3w.mssql\init\setup.sh
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6C0A966A-69B2-4CCB-B5D7-80A26A401DBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C0A966A-69B2-4CCB-B5D7-80A26A401DBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C0A966A-69B2-4CCB-B5D7-80A26A401DBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C0A966A-69B2-4CCB-B5D7-80A26A401DBC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B41854DE-070A-4215-BA98-456376AD4226} = {2311FA37-9DE2-4C11-8D8E-D9CA4B21A1E9}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {426AB55C-25CF-4A7E-BF5C-6CC9AB5BC718}
+	EndGlobalSection
+EndGlobal
